@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> بدر محمد كل يوم جديد</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  /* الألوان الجديدة: الذهبي (#d4af37) والأسود */
+  body{ margin:0; font-family:Arial,sans-serif; min-height:100vh; display:flex; justify-content:center; align-items:center; overflow:hidden; background:linear-gradient(135deg,#000,#1a1a1a); }
+  .app{ width:370px; padding:30px 18px; border-radius:30px; background:rgba(20,20,20,0.8); backdrop-filter:blur(12px); border:1px solid #d4af37; text-align:center; box-shadow:0 0 30px rgba(212,175,55,0.2); max-height: 90vh; overflow-y: auto; }
+  
+  .profile{ position:relative; width:120px; height:120px; margin:auto; }
+  .profile::before{ content:""; position:absolute; inset:-5px; border-radius:50%; background:#d4af37; filter:blur(8px); }
+  .profile img{ width:120px; height:120px; border-radius:50%; object-fit:cover; position:relative; border:3px solid #000; }
+  
+  .name{ color:#d4af37; font-size:22px; margin:15px 0; font-weight:bold; letter-spacing: 1px; }
+
+  .accordion { background: #d4af37; color: #000; cursor: pointer; padding: 15px; width: 100%; text-align: center; border: none; border-radius: 12px; font-weight: bold; transition: 0.3s; }
+  .accordion:hover { background: #fff; }
+  .panel { padding: 15px; display: none; background: rgba(255,255,255,0.05); border:1px solid #d4af37; margin-top: 10px; border-radius: 10px; color: #eee; font-size: 14px; text-align: right; }
+
+  .icons{ display:flex; justify-content:center; gap:12px; margin:20px 0; flex-wrap: wrap; }
+  .icons a{ width:45px; height:45px; display:flex; justify-content:center; align-items:center; border-radius:50%; background:#333; color:#d4af37; border:1px solid #d4af37; transition:.3s; }
+  .icons a:hover{ background:#d4af37; color:#000; transform:scale(1.1); }
+  
+  .link{ display:flex; justify-content:space-between; align-items:center; padding:14px; margin:10px 0; border-radius:12px; background:transparent; border:1px solid #d4af37; color:#fff; text-decoration:none; transition:.3s; }
+  .link:hover{ background:#d4af37; color:#000; transform:scale(1.02); font-weight:bold; }
+  
+  .footer{ color:#d4af37; font-size:13px; margin-top:30px; opacity: 0.8; }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <div class="profile">
+    <img src="logo.jpeg" alt="Logo">
+  </div>
+  <div class="name">بدرمحمد كل يوم جديد</div>
+  
+  <div class="icons">
+    <a href="https://www.facebook.com/share/1Docf124BM/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://t.me/gghhhfggv"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://tiktok.com/@uservu88pgzu8p"><i class="fab fa-tiktok"></i></a>
+    <a href="https://whatsapp.com/channel/0029Vb85cv629759g6NvuK1g"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/lbdr9942?igsh=dnZ2ZGJhOGw5MXh1"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <a class="link" href="https://www.facebook.com/share/1Docf124BM/"><span>فيسبوك</span><i class="fab fa-facebook-f"></i></a>
+  <a class="link" href="https://t.me/gghhhfggv"><span>تليجرام القناة الأساسية</span><i class="fab fa-telegram-plane"></i></a>
+  <a class="link" href="https://t.me/kol_3yom"><span>تليجرام التواصل</span><i class="fab fa-telegram-plane"></i></a>
+  <a class="link" href="https://tiktok.com/@uservu88pgzu8p"><span>تيك توك</span><i class="fab fa-tiktok"></i></a>
+  <a class="link" href="https://whatsapp.com/channel/0029Vb85cv629759g6NvuK1g"><span>قناة واتساب</span><i class="fab fa-whatsapp"></i></a>
+  <a class="link" href="https://www.instagram.com/lbdr9942?igsh=dnZ2ZGJhOGw5MXh1"><span>إنستجرام</span><i class="fab fa-instagram"></i></a>
+
+  <div class="footer">التاجر للدعاية والإعلان</div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
